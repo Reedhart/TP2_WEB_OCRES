@@ -15,7 +15,7 @@
 		crossorigin="anonymous"></script>
 </head>
 
-<body class ="container">
+<body class="container">
 	<header class="row">
 		<div class="wrapper">
 			<div class="logo-search">
@@ -27,28 +27,38 @@
 				<input type="submit" name="submit" value="Rechercher" class="submit">
 			</form>
 			<div class="user">
-				<a href="#">Luke Chesser</a>
+				<div class="dropdown">
+					<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+						Luke Cheeser
+					</button>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+						<a class="dropdown-item" href="#">Edit profile</a>
+						<a class="dropdown-item" href="#">Logout</a>
+					</div>
+				</div>
 			</div>
 		</div>
 	</header>
 	<div class="row">
 		<aside class="col-2">
-			<h3>Browse</h3>
-			<nav class="browse">
-				<ul class="main">
-					<li><a class="heavy" href="#">Heavy Rotation</a></li>
-					<li><a class="recent" href="#">Recent Activity</a></li>
-					<li><a class="top" href="#">Top Charts</a></li>
-					<li><a class="new" href="#">New Releases</a></li>
-				</ul>
-			</nav>
-			<h3>Your music</h3>
-			<nav class="music">
-				<ul class="main">
-					<li><a class="collection" href="#">Collection</a></li>
-					<li><a class="history" href="#">History</a></li>
-				</ul>
-			</nav>
+			<div class="d-none d-lg-block d-print-block">
+				<h3>Browse</h3>
+				<nav class="browse">
+					<ul class="main">
+						<li><a class="heavy" href="#">Heavy Rotation</a></li>
+						<li><a class="recent" href="#">Recent Activity</a></li>
+						<li><a class="top" href="#">Top Charts</a></li>
+						<li><a class="new" href="#">New Releases</a></li>
+					</ul>
+				</nav>
+				<h3>Your music</h3>
+				<nav class="music">
+					<ul class="main">
+						<li><a class="collection" href="#">Collection</a></li>
+						<li><a class="history" href="#">History</a></li>
+					</ul>
+				</nav>
+			</div>
 		</aside>
 
 		<main class="col-md-10 col-sm-4 col-xs-1">
