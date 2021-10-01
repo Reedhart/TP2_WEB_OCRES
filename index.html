@@ -2,6 +2,9 @@
 
 <head>
 	<meta charset="UTF-8" />
+
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
 	<title>Rdio - Luke Chesser</title>
 
 	<link rel="stylesheet" href="css/reset.css" />
@@ -16,22 +19,24 @@
 </head>
 
 <body class="container">
-	<header class="row">
+	<header class="row justify-content-between">
 		<div class="wrapper">
-			<div class="logo-search">
+			<div>
 				<img class="pull-left" src="img/logo.png" />
 			</div>
-
-			<form method="POST" action="index.html">
-				<input type="search" required class="search">
-				<input type="submit" name="submit" value="Rechercher" class="submit">
-			</form>
-			<div class="user">
+			<div class="col-4 d-none d-lg-block d-print-block">
+				<form method="POST" action="index.html">
+					<input type="search" required class="search">
+					<input type="submit" name="submit" value="Rechercher" class="submit">
+				</form>
+			</div>
+			<div class="user col-6 col-lg-3 text-right">
 				<div class="dropdown">
-					<button class="btn btn-secondary dropdown-toggle" type="button" data-toggle="dropdown">
+					<a class="dropdown-toggle" href="#" role="button" id ="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+						aria-expanded="false">
 						Luke Cheeser
-					</button>
-					<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+					</a>
+					<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
 						<a class="dropdown-item" href="#">Edit profile</a>
 						<a class="dropdown-item" href="#">Logout</a>
 					</div>
@@ -39,144 +44,148 @@
 			</div>
 		</div>
 	</header>
-	<div class="row">
-		<aside class="col-2">
-			<div class="d-none d-lg-block d-print-block">
-				<h3>Browse</h3>
-				<nav class="browse">
-					<ul class="main">
-						<li><a class="heavy" href="#">Heavy Rotation</a></li>
-						<li><a class="recent" href="#">Recent Activity</a></li>
-						<li><a class="top" href="#">Top Charts</a></li>
-						<li><a class="new" href="#">New Releases</a></li>
-					</ul>
-				</nav>
-				<h3>Your music</h3>
-				<nav class="music">
-					<ul class="main">
-						<li><a class="collection" href="#">Collection</a></li>
-						<li><a class="history" href="#">History</a></li>
-					</ul>
-				</nav>
-			</div>
-		</aside>
-
-		<main class="col-md-10 col-sm-4 col-xs-1">
-			<header>
-				<div class="name-photo">
-					<aside>
-						<img src="img/artist.png" />
-					</aside>
-					<div class="name">
-						<h1>Luke Chesser</h1>
-						<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img
-									class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/"
-								target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
-					</div>
+		<div class="row">
+			<aside class="col-2">
+				<div class="d-none d-lg-block d-print-block">
+					<h3>Browse</h3>
+					<nav class="browse">
+						<ul class="main">
+							<li><a class="heavy" href="#">Heavy Rotation</a></li>
+							<li><a class="recent" href="#">Recent Activity</a></li>
+							<li><a class="top" href="#">Top Charts</a></li>
+							<li><a class="new" href="#">New Releases</a></li>
+						</ul>
+					</nav>
+					<h3>Your music</h3>
+					<nav class="music">
+						<ul class="main">
+							<li><a class="collection" href="#">Collection</a></li>
+							<li><a class="history" href="#">History</a></li>
+						</ul>
+					</nav>
 				</div>
-				<div class="stats-links">
-					<section class="stats">
-						<span>2 Playlists</span>
-						<span>4 Reviews</span>
-						<span>6 Followers</span>
-						<span>13 Following</span>
-					</section>
-					<div class="links">
-						<div>
-							<a href="#">Collection</a>
-							<a href="#">History</a>
+			</aside>
+
+			<main class="col-md-10 col-10 container-fluid">
+				<header>
+					<div class="name-photo">
+						<aside>
+							<img src="img/artist.png" />
+						</aside>
+						<div class="name">
+							<h1>Luke Chesser</h1>
+							<p>Montreal, Quebec, Canada <a href="https://www.facebook.com/" target="_blank"><img
+										class="share" src="img/icon/fb.png" /></a><a href="https://twitter.com/"
+									target="_blank"><img class="share" src="img/icon/twitter.png" /></a></p>
 						</div>
 					</div>
-				</div>
-			</header>
-			<h2>Top Album</h2>
-			<div>
-				<a class="station" href="#">Start Station</a>
-			</div>
-			<section id="albums">
-				<article>
-					<figure>
-						<img src="img/album/album_01.png" />
-						<figcaption>Native (Deluxe)</figcaption>
-					</figure>
-					<div class="artist">OneRepublic</div>
-					<div class="count">17 songs</div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_02.png" />
-						<figcaption>Wax Wings</figcaption>
-					</figure>
-					<div class="artist">Joshua Radin</div>
-					<div class="count">11 songs</div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_03.png" />
-						<figcaption>Modern Vampires of th...</figcaption>
-					</figure>
-					<div class="artist">Vampire Weekend</div>
-					<div class="count">12 songs</div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_04.png" />
-						<figcaption>Night Visions</figcaption>
-					</figure>
-					<div class="artist">Imagine Dragons</div>
-					<div class="count">11 songs</div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_05.png" />
-						<figcaption>Trouble Will Find Me</figcaption>
-					</figure>
-					<div class="artist">The National</div>
-					<div class="count">13 songs <span class="explicit">EXPLICIT</span></div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_06.png" />
-						<figcaption>Native (Deluxe)</figcaption>
-					</figure>
-					<div class="artist">OneRepublic</div>
-					<div class="count">17 songs</div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_07.png" />
-						<figcaption>Wax Wings</figcaption>
-					</figure>
-					<div class="artist">Joshua Radin</div>
-					<div class="count">11 songs</div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_08.png" />
-						<figcaption>Modern Vampires of th...</figcaption>
-					</figure>
-					<div class="artist">Vampire Weekend</div>
-					<div class="count">12 songs</div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_09.png" />
-						<figcaption>Night Visions</figcaption>
-					</figure>
-					<div class="artist">Imagine Dragons</div>
-					<div class="count">11 songs <span class="explicit">EXPLICIT</span></div>
-				</article>
-				<article>
-					<figure>
-						<img src="img/album/album_10.png" />
-						<figcaption>Trouble Will Find Me</figcaption>
-					</figure>
-					<div class="artist">The National</div>
-					<div class="count">13 songs</div>
-				</article>
-			</section>
-		</main>
-	</div>
+					<div class="stats-links row justify-content-between">
+						<section class="stats col-md-12 col-sm-8 col-8">
+							<span>2 Playlists</span>
+							<span>4 Reviews</span>
+							<span>6 Followers</span>
+							<span>13 Following</span>
+						</section>
+						<div class="links col-md-4 col-sm-2 col-2 text-right">
+							<div>
+								<a href="#">Collection</a>
+								<a href="#">History</a>
+							</div>
+						</div>
+					</div>
+				</header>
+					<div class="row">
+						<h2 class="col-6">Top Album</h2>
+						<div class=" col-6 text-right">
+							<a class="station" href="#">Start Station</a>
+						</div>
+						<div class="row">
+							<section id="albums">
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_01.png" />
+										<figcaption>Native (Deluxe)</figcaption>
+									</figure>
+									<div class="artist">OneRepublic</div>
+									<div class="count">17 songs</div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_02.png" />
+										<figcaption>Wax Wings</figcaption>
+									</figure>
+									<div class="artist">Joshua Radin</div>
+									<div class="count">11 songs</div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_03.png" />
+										<figcaption>Modern Vampires of th...</figcaption>
+									</figure>
+									<div class="artist">Vampire Weekend</div>
+									<div class="count">12 songs</div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_04.png" />
+										<figcaption>Night Visions</figcaption>
+									</figure>
+									<div class="artist">Imagine Dragons</div>
+									<div class="count">11 songs</div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_05.png" />
+										<figcaption>Trouble Will Find Me</figcaption>
+									</figure>
+									<div class="artist">The National</div>
+									<div class="count">13 songs <span class="explicit">EXPLICIT</span></div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_06.png" />
+										<figcaption>Native (Deluxe)</figcaption>
+									</figure>
+									<div class="artist">OneRepublic</div>
+									<div class="count">17 songs</div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_07.png" />
+										<figcaption>Wax Wings</figcaption>
+									</figure>
+									<div class="artist">Joshua Radin</div>
+									<div class="count">11 songs</div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_08.png" />
+										<figcaption>Modern Vampires of th...</figcaption>
+									</figure>
+									<div class="artist">Vampire Weekend</div>
+									<div class="count">12 songs</div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_09.png" />
+										<figcaption>Night Visions</figcaption>
+									</figure>
+									<div class="artist">Imagine Dragons</div>
+									<div class="count">11 songs <span class="explicit">EXPLICIT</span></div>
+								</article>
+								<article class="col-3 col-sm-3 col-md-3 col-lg-2">
+									<figure>
+										<img src="img/album/album_10.png" />
+										<figcaption>Trouble Will Find Me</figcaption>
+									</figure>
+									<div class="artist">The National</div>
+									<div class="count">13 songs</div>
+								</article>
+							</section>
+						</div>
+					</div>
+			</main>
+		</div>
 </body>
 
 </html>
