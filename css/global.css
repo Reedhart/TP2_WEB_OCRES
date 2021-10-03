@@ -216,6 +216,38 @@ nav a.new { background: url("../img/icon/new.png") no-repeat 0px; }
 nav a.collection { background: url("../img/icon/collection.png") no-repeat 0px; }
 nav a.history { background: url("../img/icon/history.png") no-repeat 0px; }
 
+@media screen and (max-width: 500px) {
+    #search {
+        display: none;
+    }
+}
 
+@media screen and (max-width: 430px) {
+    #logoFacebook, #logoTwitter {
+        display: none;
+    }  
+}
+
+
+@media screen and (min-width:1400px) {
+    html {
+        font-size:1.2rem;
+    }
+
+}
+
+
+@media screen and (min-width:600px) {
+    html {
+        font-size: 0.8rem;
+    }
+
+}
+
+@media screen and (min-width:450px) {
+    html {
+        font-size: 0.6rem;
+    }
+}
 
 
